@@ -113,6 +113,7 @@ __global__ void IDFT_GPU_wiersze(double *Re_1, double *Im_1, double *Im_2, doubl
 
 		Re_2[idy**szerokosc + idx] = Re_2[idy**szerokosc + idx] / (*wysokosc);
 		Im_2[idy**szerokosc + idx] = Im_2[idy**szerokosc + idx] / (*wysokosc);
+		Im_2[idy**width + idx] = Im_2[idy**width + idx] / (*high);
 	}
 
 }
