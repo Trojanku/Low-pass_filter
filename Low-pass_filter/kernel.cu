@@ -14,7 +14,6 @@ using namespace std;
 int const size = 16;
 
 
-__global__ void DFT_GPU_wiersze(double *Re_1, double *Im_1, double *Im_2, double *Re_2, int *wysokosc, int *szerokosc) {
 
 	int dir = 1;
 	long k;
